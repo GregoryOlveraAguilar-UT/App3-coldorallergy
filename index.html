@@ -32,6 +32,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
+  <head> 
+      <title>Hello World</title>  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
 
@@ -48,14 +54,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-
-	function computeResults() {
-       		 var allergyPercent = (allergy_count/4)*100
-       		 var coldPercent = (cold_count/4)*100
-		 var resultText = document.getElementById("results");
+		
+        
+        
+        function computeResults() {
+       		var allergyPercent = (allergy_count/4)*100
+       		var coldPercent = (cold_count/4)*100
+		var resultText = document.getElementById("results");
             resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "<br> Probability it is a cold = " + coldPercent;
          }
-	
+         
+         
   </script>
 
 
@@ -95,8 +104,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-	
-	<p>DIY!</p>
+    
+<p>DIY!</p>
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -104,9 +113,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-       		 <p>Are your eyes watery or itchy?</p> 
-			<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-			<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
+        <p>Are your eyes watery or itchy?</p> 
+	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+	<a href="#two" onclick="coldAdd();" class="w3-btn w3-black">No</a>
     	</div>
 </div>
 
@@ -117,11 +126,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
+        <a href="#three" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>	
-	
+
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -129,11 +138,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
-	</div>
+        <a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black">No</a>
+         
 </div>	
-	
+
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -141,24 +150,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
-<footer class="w3-bottom w3-container w3-flat-carrot">
+        <a href="#five" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div>
-</div>	
-	
+    
+    </div>	
+
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
-		</div>
-	
-	 <p id="results"></p>
-		</div>
-	
+    		<h1>Results</h1>
+            </div>
+    
+    <p id="results"></p>
+    
 	<div id="content" class="w3-container">
         <a href="#five" onclick="computeResults();" class="w3-btn w3-black">Click here to view your results</a>
-		</div>
-	</div>
+
 </footer>
 
 </body>
