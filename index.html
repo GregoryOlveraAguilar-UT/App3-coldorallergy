@@ -40,17 +40,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var allergy_count = 0; // This serves to create a box in order to store all the allergy counts in, the counts begin at 0
+        var cold_count = 0; // Same thing here, except its for cold counts now
 
 
         function allergyAdd(){
-            allergy_count = allergy_count + 1;
+            allergy_count = allergy_count + 1; // This function relates to the onclick button code below, the button will run command this when clicked
 
         }
 
         function coldAdd(){
-            cold_count = cold_count + 1;
+            cold_count = cold_count + 1; // This means that every time a button runs this command it will add 1 count to the variable "box" we created above
         }
 		
         
@@ -109,7 +109,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">  <!-- This identifies the page as page one for the href of the button to know where to go when clicked -->
 	<div id="header" class="w3-container w3-flat-carrot">  <!-- This creates the header for the page with the relevent text below it, I added this to all pages-->
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> <!-- This is the text that will be displayed in the header -->
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -119,9 +119,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> 
 	
 	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- This is to set up the footer for this page, I added this to the end of each page -->
-		<p>DIY!</p>
+		<p>DIY!</p> <!-- This is what text will be displayed in the space for the footer -->
 		</footer>	
-	</div>	
+	</div>	<!-- This serves as the end of page one -->
 
 <div class="page" id="two"> <!-- This serves as the beginning of page two with the relevant content and actions below -->
 	<div class="w3-container w3-flat-carrot">
