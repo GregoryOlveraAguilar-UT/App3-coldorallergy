@@ -55,11 +55,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
         
         
-        function computeResults() {
-        	var allergyPercent = (allergy_count/6)*100
-           	var coldPercent = (cold_count/6)*100
-		var resultText = document.getElementById("results");
-            resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";
+        function computeResults(){ // Created a function to produce results and named it in order for the button to recognize what to do.
+        	var allergyPercent = (allergy_count/6)*100 // This takes all the allergy counts gathered from the buttons, divides by 6 b/c 6 qs and multiples it by 100 to get a percentage.
+           	var coldPercent = (cold_count/6)*100 //Same things here except its with the cold counts. Also variables serve as a box w/ labels to put stuff like counts in.
+		var resultText = document.getElementById("results"); // This is done in order to capture the results paragraph that I created in page seven below.
+            resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%"; // This is done in order to replace what I captured withmy results along with a % sign.
          }
          
          
